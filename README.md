@@ -33,7 +33,7 @@ GlobMeet 面向跨国参会人员与会务人员，围绕会议查询、预约�
 | 产品方案设计 | PRD、产品框架图、业务流程图、版本规划 | Word PRD；限时手绘产品框架图按考试现场要求另行提交；流程图/规划作为 PRD 附件 | `docs/requirements.md`、`docs/product-architecture.md`、`docs/prototype.md` | PRD 待导出；手绘图待现场提交 |
 | UX 体验设计 | 信息架构、交互说明、高保真 UI、Design System | 原型源文件放入 `deliverables/02-prototype/`；PNG UI 图放入 `deliverables/03-ui/` | `docs/page-flow-prototype.md`、`docs/page-requirements.md`、`docs/visual-spec.md`、Figma 关键帧链接 | 待放入最终文件 |
 | HTML 交付实现 | 可交互高保真 Demo、源码 | 源码在本仓库；提交压缩包位于 `deliverables/04-source-code/` | `src/`、`package.json`、`docs/technical-readiness.md` | Demo 可运行；源码 ZIP 已生成 |
-| 交付规范 | UI 图、交付清单、部署地址、技术说明 | 本 README、`deliverables/README.md`、部署地址记录 | `docs/acceptance.md`、`docs/delivery-map.md` | 部署地址待补充 |
+| 交付规范 | UI 图、交付清单、部署地址、技术说明 | 本 README、`deliverables/README.md`、[在线演示](https://bunqnf.github.io/globmeet-international-meeting-demo/) | `docs/acceptance.md`、`docs/delivery-map.md` | 在线 Demo 已部署 |
 | AI 应用能力 | AI 能力说明、创新亮点、AI 交互资产/工作记录 | PRD AI 章节与 `deliverables/05-ai-evidence/` | `docs/requirements.md`、`docs/prototype.md` | 待整理为最终附件 |
 
 > 说明：竞赛方案明确要求产品框架图为限时手绘，须依照现场时间节点提交；该图不能以仓库内自动生成文件替代。
@@ -70,4 +70,4 @@ deliverables/                最终竞赛提交物的固定落位目录
 3. 在 `deliverables/03-ui/` 放入命名完整的高保真 PNG 导出图。
 4. 复核 `deliverables/04-source-code/` 中的源码 `.zip` 不含 `node_modules`、`dist`、`.git` 和密钥，并可按本 README 构建。
 5. 在 `deliverables/05-ai-evidence/` 放入 AI 能力说明、创新说明及相关交互资产/工作记录。
-6. 写入可访问的部署地址，并在目标设备按演示入口完成一次走查。
+6. 已部署至 [GitHub Pages](https://bunqnf.github.io/globmeet-international-meeting-demo/)；提交前在目标设备完成一次走查。

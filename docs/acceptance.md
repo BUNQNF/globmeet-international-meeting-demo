@@ -36,3 +36,11 @@
 - 静态状态：当前所有提交、批准、调整、核验等写入动作均为禁用展示，避免伪造已实现交互。
 - 运行边界：无外部网络、服务端、真实账户、真实二维码或真实 AI 调用。
 - 阶段结论：`待用户确认`。确认后进入 T6，按 T1/T2 规则接通领域动作与同步状态。
+
+## 5. 在线部署验证
+
+| 项目 | 结果 | 证据 |
+| --- | --- | --- |
+| GitHub Pages | 通过 | [公开在线 Demo](https://bunqnf.github.io/globmeet-international-meeting-demo/) 启用 HTTPS，首页返回 `HTTP 200`。 |
+| 自动部署 | 通过 | GitHub Actions `Deploy GitHub Pages` 工作流成功完成，`main` 的后续提交将自动构建和发布。 |
+| 路径配置 | 通过 | Vite 构建资源使用 `/globmeet-international-meeting-demo/` 子路径，适配项目型 GitHub Pages 地址。 |

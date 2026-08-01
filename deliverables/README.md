@@ -12,4 +12,4 @@
 
 ## 当前状态
 
-请以根目录 `README.md` 的交付清单为准：当前仓库已有源码、源码 ZIP 和可追溯的 Markdown 过程材料；Word PRD、原型源文件、UI PNG 导出、部署地址和 AI 附件仍需在正式提交前生成并放入此处。
+请以根目录 `README.md` 的交付清单为准：当前仓库已有源码、源码 ZIP、[GitHub Pages 在线演示](https://bunqnf.github.io/globmeet-international-meeting-demo/) 和可追溯的 Markdown 过程材料；Word PRD、原型源文件、UI PNG 导出和 AI 附件仍需在正式提交前生成并放入此处。
