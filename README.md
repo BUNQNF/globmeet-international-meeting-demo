@@ -1,3 +1,5 @@
+![GlobMeet 国际智能会议协同平台产品主视觉](docs/assets/globmeet-product-visual.png)
+
 # GlobMeet 国际智能会议协同平台
 
 第二期研发智能挑战赛，场景二「国际化智能会议预约系统」的竞赛交付仓库。
