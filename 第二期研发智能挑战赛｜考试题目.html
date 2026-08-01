@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://www.sztv.com.cn/huodong/sj/2026/exam.html#scene-2 -->
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05070a">
+  <title>第二期研发智能挑战赛｜考试题目</title>
+  <style>
+    :root {
+      --bg: #05070a;
+      --panel: rgba(255,255,255,.055);
+      --line: rgba(255,255,255,.11);
+      --text: #f5f7f8;
+      --muted: #9aa2ad;
+      --blue: #70a7ff;
+      --cyan: #63e6ff;
+      --green: #74f3bd;
+      --purple: #b49cff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--text);
+      background:
+        radial-gradient(900px 580px at 84% -5%, rgba(82,108,255,.2), transparent 62%),
+        radial-gradient(800px 600px at -10% 26%, rgba(47,210,177,.12), transparent 64%),
+        radial-gradient(700px 480px at 50% 110%, rgba(180,156,255,.08), transparent 60%),
+        var(--bg);
+      font: 15px/1.65 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+        -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      letter-spacing: .02em;
+      min-height: 100vh;
+      text-rendering: optimizeLegibility;
+      -webkit-font-smoothing: antialiased;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      opacity: .35;
+      pointer-events: none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 72px 72px;
+      mask-image: linear-gradient(to bottom, black, transparent 72%);
+    }
+    a { color: inherit; text-decoration: none; }
+    .progress {
+      position: fixed; z-index: 100; top: 0; left: 0; height: 2px;
+      width: 0; background: linear-gradient(90deg,var(--green),var(--cyan),var(--purple));
+      box-shadow: 0 0 18px var(--cyan);
+    }
+    .nav {
+      position: sticky; top: 0; z-index: 30;
+      backdrop-filter: blur(24px) saturate(140%);
+      background: rgba(5,7,10,.66);
+      border-bottom: 1px solid rgba(255,255,255,.07);
+    }
+    .nav-inner {
+      max-width: 1080px; height: 68px; padding: 0 28px; margin: auto;
+      display: flex; align-items: center; gap: 24px;
+    }
+    .brand { display: flex; align-items: center; gap: 11px; font-weight: 650; letter-spacing: -.02em; }
+    .mark {
+      width: 30px; height: 30px; border: 1px solid rgba(255,255,255,.28);
+      border-radius: 50%; display: grid; place-items: center; position: relative;
+      background: conic-gradient(from 45deg,rgba(112,167,255,.25),rgba(116,243,189,.1),rgba(180,156,255,.25));
+    }
+    .mark::after { content:""; width: 9px; height: 9px; border: 1px solid white; border-radius: 50%; }
+    .nav-links { display: flex; gap: 24px; margin-left: auto; color: var(--muted); font-size: 13px; }
+    .nav-links a { transition: color .2s ease; }
+    .nav-links a:hover { color: white; }
+    .wrap { max-width: 1080px; margin: auto; padding: 0 28px 90px; }
+
+    .hero {
+      padding: 104px 0 48px;
+      animation: fade-up .7s ease both;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 9px; color: #cbd3dd; font-size: 12px;
+      text-transform: uppercase; letter-spacing: .16em; border: 1px solid var(--line);
+      padding: 8px 12px; border-radius: 999px; background: rgba(255,255,255,.035);
+    }
+    .pulse {
+      width: 7px; height: 7px; border-radius: 50%; background: var(--green);
+      box-shadow: 0 0 12px var(--green); animation: pulse 2s ease infinite;
+    }
+    h1 {
+      margin: 24px 0 0; font-size: clamp(46px,7vw,84px);
+      line-height: .98; letter-spacing: -.065em; font-weight: 650;
+    }
+    .gradient {
+      background: linear-gradient(100deg,#fff 10%,#a8c8ff 45%,#9cf4d3 85%);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+
+    section { padding: 12px 0 40px; }
+    .scenario-list { display: grid; gap: 22px; }
+
+    .scenario {
+      --accent: var(--blue);
+      position: relative;
+      overflow: hidden;
+      padding: 36px 38px 40px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(165deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      backdrop-filter: blur(14px);
+      transition: transform .3s ease, border-color .3s ease, background .3s ease;
+      animation: fade-up .8s ease both;
+    }
+    .scenario:nth-child(2) { animation-delay: .1s; }
+    .scenario:hover {
+      transform: translateY(-3px);
+      border-color: color-mix(in srgb, var(--accent) 40%, var(--line));
+      background: linear-gradient(165deg, rgba(255,255,255,.075), rgba(255,255,255,.03));
+    }
+    .scenario::before {
+      content: "";
+      position: absolute;
+      left: 0; top: 28px; bottom: 28px;
+      width: 3px; border-radius: 99px;
+      background: linear-gradient(180deg, var(--accent), transparent);
+    }
+    .scenario::after {
+      content: "";
+      position: absolute;
+      width: 280px; height: 280px;
+      right: -100px; top: -120px;
+      border-radius: 50%;
+      background: var(--accent);
+      filter: blur(80px);
+      opacity: .16;
+      pointer-events: none;
+    }
+    .scenario.scene-2 { --accent: var(--green); }
+
+    .scenario-head {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 26px;
+      position: relative; z-index: 1;
+    }
+    .scene-no {
+      flex: 0 0 auto;
+      width: 42px; height: 42px;
+      display: grid; place-items: center;
+      border-radius: 14px;
+      font: 700 14px ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: #08100d;
+      background: var(--accent);
+      box-shadow: 0 8px 24px color-mix(in srgb, var(--accent) 35%, transparent);
+    }
+    .scenario h2 {
+      margin: 0;
+      font-size: clamp(26px,3.2vw,34px);
+      letter-spacing: -.04em;
+      line-height: 1.15;
+      font-weight: 650;
+    }
+
+    .scenario-body {
+      position: relative; z-index: 1;
+      display: grid;
+      gap: 18px;
+    }
+
+    .lead {
+      margin: 0;
+      color: #e4e9ef;
+      font-size: clamp(16px,1.7vw,18px);
+      line-height: 1.85;
+      font-weight: 450;
+      letter-spacing: .025em;
+    }
+
+    .olist {
+      margin: 0;
+      padding: 4px 0 4px;
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      counter-reset: item;
+    }
+    .olist li {
+      position: relative;
+      margin: 0;
+      padding: 14px 16px 14px 52px;
+      border-radius: 14px;
+      background: rgba(0,0,0,.22);
+      border: 1px solid rgba(255,255,255,.06);
+      color: #cfd6df;
+      font-size: 15px;
+      line-height: 1.8;
+      letter-spacing: .02em;
+      counter-increment: item;
+    }
+    .olist li::before {
+      content: counter(item);
+      position: absolute;
+      left: 14px;
+      top: 15px;
+      width: 26px;
+      height: 26px;
+      border-radius: 8px;
+      display: grid;
+      place-items: center;
+      font: 700 12px ui-monospace, SFMono-Regular, Menlo, monospace;
+      color: #08100d;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 12%, transparent);
+    }
+
+    .ask {
+      margin: 0;
+      padding: 18px 20px;
+      border-radius: 16px;
+      background: color-mix(in srgb, var(--accent) 8%, rgba(0,0,0,.18));
+      border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent);
+      color: #e8edf3;
+      font-size: 15.5px;
+      line-height: 1.9;
+      letter-spacing: .025em;
+      font-weight: 450;
+    }
+
+    footer {
+      padding: 48px 0 30px;
+      color: #707986;
+      border-top: 1px solid rgba(255,255,255,.07);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+      font-size: 13px;
+    }
+    footer a {
+      color: #9aa4b0;
+      transition: color .2s ease;
+    }
+    footer a:hover { color: #fff; }
+
+    @keyframes fade-up {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: none; }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; box-shadow: 0 0 12px var(--green); }
+      50% { opacity: .55; box-shadow: 0 0 6px var(--green); }
+    }
+
+    @media(max-width:700px){
+      .wrap{padding-left:18px;padding-right:18px}
+      .nav-inner{padding:0 18px}
+      .hero{padding-top:76px}
+      h1{font-size:48px}
+      .scenario{padding:24px 20px 26px}
+      .lead{font-size:15.5px}
+      .olist li{padding:13px 14px 13px 48px;font-size:14.5px}
+      .ask{padding:15px 16px;font-size:14.5px}
+      .nav-links{display:none}
+    }
+    @media(prefers-reduced-motion:reduce){
+      *{scroll-behavior:auto!important;animation:none!important;transition:none!important}
+    }
+  </style>
+</head>
+<body>
+  <div class="progress" id="progress" style="width: 0%;"></div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="https://www.sztv.com.cn/huodong/sj/2026/exam.html#top"><span class="mark"></span><span>AI Innovation Challenge</span></a>
+      <div class="nav-links">
+        <a href="https://www.sztv.com.cn/huodong/sj/2026/exam.html#scene-1">场景一</a>
+        <a href="https://www.sztv.com.cn/huodong/sj/2026/exam.html#scene-2">场景二</a>
+        <a href="https://www.sztv.com.cn/huodong/sj/2026/V17.html">考核方案</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap" id="top">
+    <header class="hero">
+      <div class="eyebrow"><span class="pulse"></span>Exam Questions</div>
+      <h1><span class="gradient">考试题目</span></h1>
+    </header>
+
+    <section>
+      <div class="scenario-list">
+        <article class="scenario" id="scene-1">
+          <div class="scenario-head">
+            <span class="scene-no">01</span>
+            <h2>场景一：</h2>
+          </div>
+          <div class="scenario-body">
+            <p class="lead">现有 H5 项目研发主要依赖跨部门线下协作，业务、产品、设计、研发等角色通过口头沟通和 Excel 台账传递需求，流程缺乏统一管理。当前存在以下问题：</p>
+            <ol class="olist">
+              <li>需求沟通、原型绘制、UI 设计和前端开发均由人工独立完成，缺少工具联动，研发及迭代周期较长；</li>
+              <li>业务需求频繁变更或临时新增，仅通过 Excel 手工记录，无法同步关联原型、UI 设计及前端代码，变更过程难以追溯；</li>
+              <li>各环节信息同步、确认和版本管理机制不完善，需求调整后需多角色重复修改，容易出现理解偏差、版本不一致及重复返工；</li>
+              <li>跨部门协作缺少明确的角色权限、任务流转、审核确认和交付闭环。</li>
+            </ol>
+            <p class="ask">请基于 AI 工具，为 H5 项目设计并实现一套覆盖“需求提出—需求分析与确认—原型生成—UI 设计—前端开发—验收交付”的智能化产研流程。方案需明确各角色的职责与操作权限，建立需求流转、信息同步、审核确认、版本管理及变更追溯机制；实现需求与原型、UI、前端代码之间的关联，并展示需求变更后的协同更新过程。最终输出完整的产品设计方案及可交互、可演示、可交付的高保真 H5 Demo，形成端到端业务闭环。</p>
+          </div>
+        </article>
+
+        <article class="scenario scene-2" id="scene-2">
+          <div class="scenario-head">
+            <span class="scene-no">02</span>
+            <h2>场景二：</h2>
+          </div>
+          <div class="scenario-body">
+            <p class="lead">会议预约场景，满足不同国家和地区参会人员的预约及参会需求，拟建设一套国际化智能会议预约系统，解决多语言沟通、会议日程冲突、信息同步不及时及多角色协作等问题。</p>
+            <p class="lead">请基于 AI 工具链完成系统的产品设计与核心功能建设，重点满足以下要求：</p>
+            <ol class="olist">
+              <li>建立覆盖会议查询、预约申请、审核确认、日程管理、变更通知及现场核验的完整业务流程；</li>
+              <li>面向国际参会场景，提供多语言、跨时区及移动端适配能力，并利用 AI 提升会议推荐与行程安排体验；</li>
+              <li>合理划分参会人员、会务人员和系统管理员的角色权限，确保预约及变更过程可同步、可追溯，兼顾数据安全与隐私保护。</li>
+            </ol>
+            <p class="ask">最终输出完整的产品设计方案，并交付可交互、可演示的高保真 Demo。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <span>第二期研发智能挑战赛 · 考试题目</span>
+      <a href="https://www.sztv.com.cn/huodong/sj/2026/V17.html">查看统一命题及考核方案 →</a>
+    </footer>
+  </main>
+
+  <script>
+    window.addEventListener("scroll", () => {
+      const max = document.documentElement.scrollHeight - innerHeight;
+      document.querySelector("#progress").style.width = (max ? scrollY / max * 100 : 0) + "%";
+    }, { passive: true });
+  </script>
+
+
+</body></html>
