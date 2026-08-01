@@ -33,7 +33,7 @@ GlobMeet 提供两套面向不同用户角色的高保真演示界面：参会�
 | --- | --- | --- |
 | 产品场景分析 | 业务分析、用户分析、问题定义、业务目标 | [项目简报](docs/project-brief.md) · [产品场景分析](docs/product-scenario-analysis.md) |
 | 产品方案设计 | 产品定位、PRD、功能框架、业务流程、版本规划 | [PRD 需求文档](docs/requirements.md) · [产品功能架构](docs/product-architecture.md) · [流程原型](docs/prototype.md) |
-| UX 体验设计 | 信息架构、页面需求、交互说明、高保真视觉、Design System | [页面需求](docs/page-requirements.md) · [页面功能清单](docs/page-function-inventory.md) · [页面流程原型](docs/page-flow-prototype.md) · [视觉说明](docs/visual-spec.md) · [设计系统](design-system/globmeet/MASTER.md) · [产品 UI 覆盖规则](design-system/globmeet/pages/product-ui.md) |
+| UX 体验设计 | Figma 页面截图、信息架构、页面需求、交互说明、高保真视觉、Design System | **Figma 页面截图：** [会议发现](docs/assets/figma-keyframes/01-attendee-meetings.png) · [预约冲突与建议](docs/assets/figma-keyframes/02-attendee-schedule.png) · [会务审核](docs/assets/figma-keyframes/03-organizer-review.png) · [日程与现场核验](docs/assets/figma-keyframes/04-attendee-notice-checkin.png)<br>**设计文档：** [页面需求](docs/page-requirements.md) · [页面功能清单](docs/page-function-inventory.md) · [页面流程原型](docs/page-flow-prototype.md) · [视觉说明](docs/visual-spec.md) · [设计系统](design-system/globmeet/MASTER.md) · [产品 UI 覆盖规则](design-system/globmeet/pages/product-ui.md) |
 | HTML 交付实现 | 可交互高保真 Demo、源码与技术实现说明 | [技术就绪说明](docs/technical-readiness.md) · [验收记录](docs/acceptance.md) · [参会者移动端](https://bunqnf.github.io/globmeet-international-meeting-demo/?screen=discover&scenario=seed) · [会务人员后台](https://bunqnf.github.io/globmeet-international-meeting-demo/?screen=review&role=organizer&scenario=pending) |
 | 交付规范 | 交付对照、验收证据、公开部署地址 | [交付对照表](docs/delivery-map.md) · [验收记录](docs/acceptance.md) · [GitHub Pages 在线演示](https://bunqnf.github.io/globmeet-international-meeting-demo/) |
 | AI 应用能力 | AI 设计说明、创新亮点、可解释交互与规则边界 | [PRD AI 说明](docs/requirements.md) · [原型 AI 状态](docs/prototype.md) · [页面流程](docs/page-flow-prototype.md) |
@@ -61,6 +61,7 @@ GlobMeet 提供两套面向不同用户角色的高保真演示界面：参会�
 ```text
 src/                         React + TypeScript 高保真 Demo 源码
 docs/                        需求、流程、视觉、技术与验收过程材料
+  assets/figma-keyframes/    已确认 Figma 关键帧 PNG
 design-system/               视觉令牌与产品界面覆盖规则
 public/                      README 手机端演示二维码
 第二期研发智能挑战赛｜*.html  赛题与考核方案原文
