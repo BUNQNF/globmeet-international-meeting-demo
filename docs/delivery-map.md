@@ -38,7 +38,7 @@
 状态值只使用：`待定义`、`流程已确认`、`视觉已确认`、`实现中`、`已验证`、`不适用`。
 
 | ID | 用户目标/状态 | 需求依据 | 流程依据 | 视觉依据 | 运行验证 | 同步状态 |
-| --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | --- |
 | MEET-01 | 查询并筛选适合自己的国际会议 | REQ-001 至 REQ-003 | DISC-01、DETAIL-01 | [KF-01R / 16:13](https://www.figma.com/design/yBy5951syO4QwcTCdyDNo9?node-id=16-13) | `discover → detail` 在 390 x 844 点击验证；静态展示已验证 | 流程已确认 |
 | BOOK-01 | 提交会议预约并看到申请结果 | REQ-004 至 REQ-005、REQ-016 | APPLY-01、CONFLICT-01、BOOK-01、MYBOOK-01、CANCEL-01 至 CANCEL-02 | [KF-02R / 16:14](https://www.figma.com/design/yBy5951syO4QwcTCdyDNo9?node-id=16-14) | `detail → conflict` 在 390 x 844 点击验证；冲突页高亮“会议”；提交状态变化待 T6 | 流程已确认 |
 | REVIEW-01 | 审核预约并同步处理结果 | REQ-006 至 REQ-007、REQ-015 | REVIEW-01 至 REVIEW-04、ADJUST-01 至 ADJUST-02 | [KF-03R / 16:15](https://www.figma.com/design/yBy5951syO4QwcTCdyDNo9?node-id=16-15) | `?screen=review&role=organizer&scenario=pending`；桌面点击验证通过 | 实现中 |
