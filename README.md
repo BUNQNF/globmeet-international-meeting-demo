@@ -19,9 +19,11 @@ GlobMeet 面向跨国参会人员与会务人员，围绕会议查询、预约�
 
 ## 在线演示
 
-| 手机端扫码访问 | 电脑端浏览器访问 |
+GlobMeet 提供两套面向不同用户角色的高保真演示界面：参会者使用移动端完成会议浏览、预约和日程协同；会务人员使用桌面后台完成待办审核、会议管理和现场核验。
+
+| 参会者移动端 | 会务人员后台管理端 |
 | --- | --- |
-| <a href="https://bunqnf.github.io/globmeet-international-meeting-demo/"><img src="https://raw.githubusercontent.com/BUNQNF/globmeet-international-meeting-demo/main/public/globmeet-mobile-demo-qr.png" width="220" alt="GlobMeet 手机端演示二维码"></a><br>扫码打开移动端参会页面 | [打开 GlobMeet 在线 Demo](https://bunqnf.github.io/globmeet-international-meeting-demo/) |
+| <a href="https://bunqnf.github.io/globmeet-international-meeting-demo/?screen=discover&scenario=seed"><img src="https://raw.githubusercontent.com/BUNQNF/globmeet-international-meeting-demo/main/public/globmeet-mobile-demo-qr.png" width="220" alt="GlobMeet 参会者移动端演示二维码"></a><br>请使用手机扫码查看 | 请在电脑浏览器中打开：[会务人员后台管理页面](https://bunqnf.github.io/globmeet-international-meeting-demo/?screen=review&role=organizer&scenario=pending) |
 
 ## 交付清单
 
