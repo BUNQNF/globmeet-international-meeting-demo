@@ -36,11 +36,12 @@ GlobMeet 提供两套面向不同用户角色的高保真演示界面：参会�
 | UX 体验设计 | Figma 页面截图、信息架构、页面需求、交互说明、高保真视觉、Design System | **Figma 页面截图：** [会议发现](docs/assets/figma-keyframes/01-attendee-meetings.png) · [预约冲突与建议](docs/assets/figma-keyframes/02-attendee-schedule.png) · [会务审核](docs/assets/figma-keyframes/03-organizer-review.png) · [日程与现场核验](docs/assets/figma-keyframes/04-attendee-notice-checkin.png)<br>**设计文档：** [页面需求](docs/page-requirements.md) · [页面功能清单](docs/page-function-inventory.md) · [页面流程原型](docs/page-flow-prototype.md) · [视觉说明](docs/visual-spec.md) · [设计系统](design-system/globmeet/MASTER.md) · [产品 UI 覆盖规则](design-system/globmeet/pages/product-ui.md) |
 | HTML 交付实现 | 可交互高保真 Demo、源码与技术实现说明 | [技术就绪说明](docs/technical-readiness.md) · [验收记录](docs/acceptance.md) · [参会者移动端](https://bunqnf.github.io/globmeet-international-meeting-demo/?screen=discover&scenario=seed) · [会务人员后台](https://bunqnf.github.io/globmeet-international-meeting-demo/?screen=review&role=organizer&scenario=pending) |
 | 交付规范 | 交付对照、验收证据、公开部署地址 | [交付对照表](docs/delivery-map.md) · [验收记录](docs/acceptance.md) · [GitHub Pages 在线演示](https://bunqnf.github.io/globmeet-international-meeting-demo/) |
-| AI 应用能力 | AI 设计说明、创新亮点、可解释交互与规则边界 | [PRD AI 说明](docs/requirements.md) · [原型 AI 状态](docs/prototype.md) · [页面流程](docs/page-flow-prototype.md) |
+| AI 应用能力 | 自研四视图全栈同步工作流、AI 产研协同方法与创新价值 | [AI 应用与创新亮点：四视图全栈同步工作流](docs/ai-application-innovation.md) |
 
 ## 全部文档导航
 
 - [项目简报](docs/project-brief.md)
+- [AI 应用与创新亮点：四视图全栈同步工作流](docs/ai-application-innovation.md)
 - [产品场景分析](docs/product-scenario-analysis.md)
 - [市场案例与信息架构调研](docs/market-ia-benchmark.md)
 - [PRD 需求文档](docs/requirements.md)

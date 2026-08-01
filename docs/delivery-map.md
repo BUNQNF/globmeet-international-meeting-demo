@@ -19,6 +19,7 @@
 | 市场 IA 调研 | [market-ia-benchmark.md](market-ia-benchmark.md)（T1/T2 补充） |
 | 页面需求、功能与流程 | [page-requirements.md](page-requirements.md)、[page-function-inventory.md](page-function-inventory.md)、[page-flow-prototype.md](page-flow-prototype.md)（T1/T2 补充） |
 | 技术就绪 | [technical-readiness.md](technical-readiness.md)（T4 重新同步待确认） |
+| AI 应用与创新 | [ai-application-innovation.md](ai-application-innovation.md)（四视图全栈同步工作流） |
 | 运行页面 | 在线演示：[bunqnf.github.io/globmeet-international-meeting-demo](https://bunqnf.github.io/globmeet-international-meeting-demo/)；本地可使用 `npm run dev -- --host 127.0.0.1 --port 5173`；公开源码仓库：[BUNQNF/globmeet-international-meeting-demo](https://github.com/BUNQNF/globmeet-international-meeting-demo) |
 | 验收记录 | [acceptance.md](acceptance.md)（既有 T5 静态验收记录；因 DEC-006 不作为新导航基线） |
 
@@ -57,7 +58,7 @@
 | T4 技术就绪 | 架构、数据、预览、验证方案 | `重新同步完成，待确认` | 2026-08-01 | [technical-readiness.md](technical-readiness.md)；DEC-006 |
 | T5 静态实现 | 视觉基线与响应式稳定性 | `进行中` | 2026-08-01 | 会务待办、会议、核验和记录页使用会务专属路由；参会端“会议、日程、通知、我的”静态页面均已落地；`npm run build` 通过；会务端 1440 x 900 逐项点击验证通过；参会端 390 x 844 点击链路验证通过、375 x 812 无横向溢出；T5-C 完成全量可用链接走查 |
 | T6 行为实现 | 交互、状态、数据与异常 | `进行中` | 2026-08-01 | T6-A 已通过运行验收；T6-B 已完成“会议”页的邀请、推荐、远期会议信息、搜索筛选与时区校准交互，其余页面调整待继续。 |
-| T7 交付验收 | 四视图一致并可运行 | `进行中` | 2026-08-01 | 根目录 `README.md`、[需求文档](requirements.md)、[流程原型](prototype.md)、[视觉说明](visual-spec.md)、[技术说明](technical-readiness.md)、[验收记录](acceptance.md)、[GitHub Pages 在线演示](https://bunqnf.github.io/globmeet-international-meeting-demo/) |
+| T7 交付验收 | 四视图一致并可运行 | `进行中` | 2026-08-01 | 根目录 `README.md`、[需求文档](requirements.md)、[流程原型](prototype.md)、[视觉说明](visual-spec.md)、[技术说明](technical-readiness.md)、[AI 应用与创新亮点](ai-application-innovation.md)、[验收记录](acceptance.md)、[GitHub Pages 在线演示](https://bunqnf.github.io/globmeet-international-meeting-demo/) |
 | T8 复盘 | 可复用经验及适用边界 | `待进入` |  |  |
 
 ## 决策记录
@@ -76,6 +77,7 @@
 | DEC-008 | 2026-08-01 | B+V | 会议页采用“我的邀请、本周推荐、线上+现场、筛选”四段浏览结构；邀请项显示未读提醒与高亮卡片，筛选下沉为同页搜索工作面。时区支持浏览器自动校准与四个演示时区的手动选择，当前日期时间随所选时区显示。 | MEET-01, SCHEDULE-01 | 需求、原型、UI、运行 | 用户 | 本轮确认；`src/App.tsx` |
 | DEC-010 | 2026-08-01 | R | 采用 GitHub Pages 发布公开高保真 Demo；根目录 README 提供电脑访问链接和编码同一公开地址的手机扫码二维码。发布由 `main` 分支的 GitHub Actions 自动构建，避免手工上传构建产物。 | 全部在线演示状态 | 运行、交付 | 用户 | 本轮确认；`.github/workflows/deploy-pages.yml`、`README.md` |
 | DEC-011 | 2026-08-01 | R | 交付方式调整为仓库内可直接查看的 Markdown 文档与公开在线 Demo；移除独立 `deliverables/` 目录和源码 ZIP，README 为每份设计、流程、技术和验收材料提供直达链接。 | 全部交付状态 | 需求、原型、UI、运行、交付 | 用户 | 本轮确认；`README.md`、`docs/delivery-map.md` |
+| DEC-012 | 2026-08-01 | R | “AI 应用能力”交付改为自研 `run-four-view-fullstack-workflow` 的独立创新说明，重点呈现四视图同步、阶段门、变更分类、证据治理及项目应用；不再用产品 AI 功能章节替代产研 AI 应用证据。 | 全部交付状态 | 交付 | 用户 | 本轮确认；[ai-application-innovation.md](ai-application-innovation.md) |
 
 ## T5-B 验证记录
 
