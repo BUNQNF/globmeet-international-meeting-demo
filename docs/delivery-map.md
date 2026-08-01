@@ -8,7 +8,7 @@
 | 工作模式 | `competition` |
 | 决策负责人 | 用户 |
 | 当前阶段 | `T7` |
-| 当前阶段状态 | `T7-A 交付仓库、源码 ZIP、GitHub Pages 在线演示与提交物清单已就绪；最终格式文件待补齐` |
+| 当前阶段状态 | `T7-A Markdown 交付文档、GitHub Pages 在线演示与提交清单已就绪` |
 | 最后同步时间 | 2026-08-01 |
 | 项目框定 | [project-brief.md](project-brief.md) |
 | 需求文档 | [requirements.md](requirements.md)（T1 已确认） |
@@ -57,7 +57,7 @@
 | T4 技术就绪 | 架构、数据、预览、验证方案 | `重新同步完成，待确认` | 2026-08-01 | [technical-readiness.md](technical-readiness.md)；DEC-006 |
 | T5 静态实现 | 视觉基线与响应式稳定性 | `进行中` | 2026-08-01 | 会务待办、会议、核验和记录页使用会务专属路由；参会端“会议、日程、通知、我的”静态页面均已落地；`npm run build` 通过；会务端 1440 x 900 逐项点击验证通过；参会端 390 x 844 点击链路验证通过、375 x 812 无横向溢出；T5-C 完成全量可用链接走查 |
 | T6 行为实现 | 交互、状态、数据与异常 | `进行中` | 2026-08-01 | T6-A 已通过运行验收；T6-B 已完成“会议”页的邀请、推荐、远期会议信息、搜索筛选与时区校准交互，其余页面调整待继续。 |
-| T7 交付验收 | 四视图一致并可运行 | `进行中` | 2026-08-01 | 根目录 `README.md`、`deliverables/README.md`、`deliverables/04-source-code/globmeet-international-meeting-demo-source.zip`、[GitHub Pages 在线演示](https://bunqnf.github.io/globmeet-international-meeting-demo/)；最终 Word、原型和 UI 导出待补齐 |
+| T7 交付验收 | 四视图一致并可运行 | `进行中` | 2026-08-01 | 根目录 `README.md`、[需求文档](requirements.md)、[流程原型](prototype.md)、[视觉说明](visual-spec.md)、[技术说明](technical-readiness.md)、[验收记录](acceptance.md)、[GitHub Pages 在线演示](https://bunqnf.github.io/globmeet-international-meeting-demo/) |
 | T8 复盘 | 可复用经验及适用边界 | `待进入` |  |  |
 
 ## 决策记录
@@ -74,8 +74,8 @@
 | DEC-006 | 2026-08-01 | B+V | 参会人员一级导航收敛为“会议、日程、通知、我的”；会务人员一级工作区收敛为“待办、会议、核验”。AI、操作记录、凭证、角色切换和冲突处理下沉到任务上下文，避免非常用功能占用一级入口。移动端关键帧首项同步由“发现”改为“会议”。 | MEET-01, BOOK-01, REVIEW-01, SCHEDULE-01, CHANGE-01, CHECKIN-01 | 需求、原型、UI、运行、技术 | 用户 | [market-ia-benchmark.md](market-ia-benchmark.md)；[page-requirements.md](page-requirements.md)；[page-function-inventory.md](page-function-inventory.md)；[page-flow-prototype.md](page-flow-prototype.md) |
 | DEC-007 | 2026-08-01 | B | 会议标题默认使用中文；仅在用户主动选择 `English` 后显示对应英文标题。该规则覆盖会议卡、详情、预约、冲突、日程、通知、会务待办和操作记录，不改变业务状态。 | MEET-01, BOOK-01, REVIEW-01, SCHEDULE-01 | 需求、原型、运行 | 用户 | 用户确认；[requirements.md](requirements.md) REQ-017 |
 | DEC-008 | 2026-08-01 | B+V | 会议页采用“我的邀请、本周推荐、线上+现场、筛选”四段浏览结构；邀请项显示未读提醒与高亮卡片，筛选下沉为同页搜索工作面。时区支持浏览器自动校准与四个演示时区的手动选择，当前日期时间随所选时区显示。 | MEET-01, SCHEDULE-01 | 需求、原型、UI、运行 | 用户 | 本轮确认；`src/App.tsx` |
-| DEC-009 | 2026-08-01 | R | 最终竞赛材料以 Word PRD、可打开原型文件、PNG 高保真 UI、源码 ZIP、交付清单、部署地址、技术说明和 AI 证据组织；仓库中的 Markdown 仅为可追溯过程材料，不能替代最终格式提交物。 | 全部交付状态 | 需求、原型、UI、运行、交付 | 用户 | 本轮确认；`README.md`、`deliverables/README.md` |
 | DEC-010 | 2026-08-01 | R | 采用 GitHub Pages 发布公开高保真 Demo；根目录 README 提供电脑访问链接和编码同一公开地址的手机扫码二维码。发布由 `main` 分支的 GitHub Actions 自动构建，避免手工上传构建产物。 | 全部在线演示状态 | 运行、交付 | 用户 | 本轮确认；`.github/workflows/deploy-pages.yml`、`README.md` |
+| DEC-011 | 2026-08-01 | R | 交付方式调整为仓库内可直接查看的 Markdown 文档与公开在线 Demo；移除独立 `deliverables/` 目录和源码 ZIP，README 为每份设计、流程、技术和验收材料提供直达链接。 | 全部交付状态 | 需求、原型、UI、运行、交付 | 用户 | 本轮确认；`README.md`、`docs/delivery-map.md` |
 
 ## T5-B 验证记录
 

@@ -27,18 +27,34 @@ GlobMeet 提供两套面向不同用户角色的高保真演示界面：参会�
 
 ## 交付清单
 
-考核方案要求以六个维度验收。下表明确每项最终提交文件、当前仓库依据与交付状态。`待导出` 表示已有内容基础，但仍必须按指定格式放入对应目录后才能作为最终竞赛材料提交。
+考核方案要求以六个维度验收。以下材料均以仓库内可直接打开的 Markdown 文档交付。
 
-| 考核维度 | 最终交付物 | 最终格式 / 存放位置 | 仓库现有依据 | 状态 |
-| --- | --- | --- | --- | --- |
-| 产品场景分析 | 业务分析、用户分析、问题定义、业务目标 | `deliverables/01-prd/GlobMeet-PRD.docx` 的场景分析章节 | `docs/product-scenario-analysis.md` | 待导出 Word |
-| 产品方案设计 | PRD、产品框架图、业务流程图、版本规划 | Word PRD；限时手绘产品框架图按考试现场要求另行提交；流程图/规划作为 PRD 附件 | `docs/requirements.md`、`docs/product-architecture.md`、`docs/prototype.md` | PRD 待导出；手绘图待现场提交 |
-| UX 体验设计 | 信息架构、交互说明、高保真 UI、Design System | 原型源文件放入 `deliverables/02-prototype/`；PNG UI 图放入 `deliverables/03-ui/` | `docs/page-flow-prototype.md`、`docs/page-requirements.md`、`docs/visual-spec.md`、Figma 关键帧链接 | 待放入最终文件 |
-| HTML 交付实现 | 可交互高保真 Demo、源码 | 源码在本仓库；提交压缩包位于 `deliverables/04-source-code/` | `src/`、`package.json`、`docs/technical-readiness.md` | Demo 可运行；源码 ZIP 已生成 |
-| 交付规范 | UI 图、交付清单、部署地址、技术说明 | 本 README、`deliverables/README.md`、[在线演示](https://bunqnf.github.io/globmeet-international-meeting-demo/) | `docs/acceptance.md`、`docs/delivery-map.md` | 在线 Demo 已部署 |
-| AI 应用能力 | AI 能力说明、创新亮点、AI 交互资产/工作记录 | PRD AI 章节与 `deliverables/05-ai-evidence/` | `docs/requirements.md`、`docs/prototype.md` | 待整理为最终附件 |
+| 考核维度 | 交付内容 | 直接查看 |
+| --- | --- | --- |
+| 产品场景分析 | 业务分析、用户分析、问题定义、业务目标 | [项目简报](docs/project-brief.md) · [产品场景分析](docs/product-scenario-analysis.md) |
+| 产品方案设计 | 产品定位、PRD、功能框架、业务流程、版本规划 | [PRD 需求文档](docs/requirements.md) · [产品功能架构](docs/product-architecture.md) · [流程原型](docs/prototype.md) |
+| UX 体验设计 | 信息架构、页面需求、交互说明、高保真视觉、Design System | [页面需求](docs/page-requirements.md) · [页面功能清单](docs/page-function-inventory.md) · [页面流程原型](docs/page-flow-prototype.md) · [视觉说明](docs/visual-spec.md) · [设计系统](design-system/globmeet/MASTER.md) · [产品 UI 覆盖规则](design-system/globmeet/pages/product-ui.md) |
+| HTML 交付实现 | 可交互高保真 Demo、源码与技术实现说明 | [技术就绪说明](docs/technical-readiness.md) · [验收记录](docs/acceptance.md) · [参会者移动端](https://bunqnf.github.io/globmeet-international-meeting-demo/?screen=discover&scenario=seed) · [会务人员后台](https://bunqnf.github.io/globmeet-international-meeting-demo/?screen=review&role=organizer&scenario=pending) |
+| 交付规范 | 交付对照、验收证据、公开部署地址 | [交付对照表](docs/delivery-map.md) · [验收记录](docs/acceptance.md) · [GitHub Pages 在线演示](https://bunqnf.github.io/globmeet-international-meeting-demo/) |
+| AI 应用能力 | AI 设计说明、创新亮点、可解释交互与规则边界 | [PRD AI 说明](docs/requirements.md) · [原型 AI 状态](docs/prototype.md) · [页面流程](docs/page-flow-prototype.md) |
 
-> 说明：竞赛方案明确要求产品框架图为限时手绘，须依照现场时间节点提交；该图不能以仓库内自动生成文件替代。
+## 全部文档导航
+
+- [项目简报](docs/project-brief.md)
+- [产品场景分析](docs/product-scenario-analysis.md)
+- [市场案例与信息架构调研](docs/market-ia-benchmark.md)
+- [PRD 需求文档](docs/requirements.md)
+- [产品功能架构](docs/product-architecture.md)
+- [流程原型](docs/prototype.md)
+- [页面需求](docs/page-requirements.md)
+- [页面功能清单](docs/page-function-inventory.md)
+- [页面流程原型](docs/page-flow-prototype.md)
+- [视觉说明](docs/visual-spec.md)
+- [设计系统](design-system/globmeet/MASTER.md)
+- [产品 UI 覆盖规则](design-system/globmeet/pages/product-ui.md)
+- [技术就绪说明](docs/technical-readiness.md)
+- [验收记录](docs/acceptance.md)
+- [交付对照表](docs/delivery-map.md)
 
 ## 目录说明
 
@@ -46,12 +62,7 @@ GlobMeet 提供两套面向不同用户角色的高保真演示界面：参会�
 src/                         React + TypeScript 高保真 Demo 源码
 docs/                        需求、流程、视觉、技术与验收过程材料
 design-system/               视觉令牌与产品界面覆盖规则
-deliverables/                最终竞赛提交物的固定落位目录
-  01-prd/                    PRD Word 文档
-  02-prototype/              原型源文件及导出说明
-  03-ui/                     高保真 UI 图片导出
-  04-source-code/            源码压缩包
-  05-ai-evidence/            AI 设计说明、亮点和交互资产
+public/                      README 手机端演示二维码
 第二期研发智能挑战赛｜*.html  赛题与考核方案原文
 ```
 
@@ -63,13 +74,4 @@ deliverables/                最终竞赛提交物的固定落位目录
 - 数据边界：所有人名、会议、地点和记录均为虚构演示数据，保存范围仅为当前浏览器的 `localStorage`。
 - 技术栈：React、TypeScript、Vite、Lucide Icons、CSS 响应式布局。
 
-详细可检查材料见 [`docs/delivery-map.md`](docs/delivery-map.md)、[`docs/acceptance.md`](docs/acceptance.md) 与 [`deliverables/README.md`](deliverables/README.md)。
-
-## 评审前检查
-
-1. 在 `deliverables/01-prd/` 放入最终的 `.docx` PRD。
-2. 在 `deliverables/02-prototype/` 放入可打开的原型源文件或明确的在线原型链接说明。
-3. 在 `deliverables/03-ui/` 放入命名完整的高保真 PNG 导出图。
-4. 复核 `deliverables/04-source-code/` 中的源码 `.zip` 不含 `node_modules`、`dist`、`.git` 和密钥，并可按本 README 构建。
-5. 在 `deliverables/05-ai-evidence/` 放入 AI 能力说明、创新说明及相关交互资产/工作记录。
-6. 已部署至 [GitHub Pages](https://bunqnf.github.io/globmeet-international-meeting-demo/)；提交前在目标设备完成一次走查。
+详细可检查材料见 [交付对照表](docs/delivery-map.md) 与 [验收记录](docs/acceptance.md)。
