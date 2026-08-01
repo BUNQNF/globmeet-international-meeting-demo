@@ -19,7 +19,7 @@
 | 市场 IA 调研 | [market-ia-benchmark.md](market-ia-benchmark.md)（T1/T2 补充） |
 | 页面需求、功能与流程 | [page-requirements.md](page-requirements.md)、[page-function-inventory.md](page-function-inventory.md)、[page-flow-prototype.md](page-flow-prototype.md)（T1/T2 补充） |
 | 技术就绪 | [technical-readiness.md](technical-readiness.md)（T4 重新同步待确认） |
-| 运行页面 | `npm run dev -- --host 127.0.0.1 --port 5173`；关键状态使用 `?screen=<state>&scenario=<preset>` 直达 |
+| 运行页面 | `npm run dev -- --host 127.0.0.1 --port 5173`；关键状态使用 `?screen=<state>&scenario=<preset>` 直达；公开源码仓库：[BUNQNF/globmeet-international-meeting-demo](https://github.com/BUNQNF/globmeet-international-meeting-demo) |
 | 验收记录 | [acceptance.md](acceptance.md)（既有 T5 静态验收记录；因 DEC-006 不作为新导航基线） |
 
 ## T0 项目框定

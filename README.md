@@ -2,6 +2,8 @@
 
 第二期研发智能挑战赛，场景二「国际化智能会议预约系统」的竞赛交付仓库。
 
+公开仓库：[github.com/BUNQNF/globmeet-international-meeting-demo](https://github.com/BUNQNF/globmeet-international-meeting-demo)
+
 GlobMeet 面向跨国参会人员与会务人员，围绕会议查询、预约申请、会务审核、跨时区日程、变更通知和现场核验建立可演示闭环。参会端为移动优先界面；会务端为桌面工作台。项目使用本地演示数据和浏览器 `localStorage` 模拟跨页面同步，不包含真实登录、音视频、服务端或外部 AI 调用。
 
 ## 赛题对应
