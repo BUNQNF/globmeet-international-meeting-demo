@@ -17,34 +17,11 @@ GlobMeet 面向跨国参会人员与会务人员，围绕会议查询、预约�
 
 赛题原文与统一考核方案保留在仓库根目录，便于评审核对。
 
-## 快速运行
+## 在线演示
 
-环境要求：Node.js 20 或更高版本。
-
-```bash
-npm install
-npm run dev
-```
-
-打开终端输出的本地地址即可演示。生产构建验证：
-
-```bash
-npm run build
-npm run preview
-```
-
-## 演示入口
-
-| 使用角色 | 入口示例 | 可演示内容 |
-| --- | --- | --- |
-| 参会人员（移动端） | `/?screen=discover&scenario=seed` | 会议浏览、邀请、搜索、时区校准、预约与冲突建议 |
-| 参会人员日程 | `/?screen=schedule&scenario=approved` | 本地/当地时间、即将开始会议、行程信息 |
-| 参会人员通知 | `/?screen=notice&scenario=seed` | 审核、变更和日程通知 |
-| 会务人员（桌面端） | `/?screen=review&role=organizer&scenario=pending` | 待办审核、处理记录、预约流转 |
-| 会务人员会议 | `/?screen=organizer-meetings&role=organizer&scenario=seed` | 发起会议、查看详情、发布会议变更 |
-| 会务人员核验 | `/?screen=checkin&role=organizer&scenario=approved` | 现场预约核验 |
-
-使用页面内的“重置演示”可恢复种子数据。推荐演示视口：参会端 `390 x 844`，会务端 `1440 x 900`。
+| 手机端扫码访问 | 电脑端浏览器访问 |
+| --- | --- |
+| <a href="https://bunqnf.github.io/globmeet-international-meeting-demo/"><img src="https://raw.githubusercontent.com/BUNQNF/globmeet-international-meeting-demo/main/public/globmeet-mobile-demo-qr.png" width="220" alt="GlobMeet 手机端演示二维码"></a><br>扫码打开移动端参会页面 | [打开 GlobMeet 在线 Demo](https://bunqnf.github.io/globmeet-international-meeting-demo/) |
 
 ## 交付清单
 
